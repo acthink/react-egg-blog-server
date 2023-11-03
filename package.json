@@ -7,14 +7,14 @@
     "declarations": true
   },
   "dependencies": {
-    "egg": "^2.15.1",
-    "egg-scripts": "^2.11.0",
-    "egg-sequelize": "^5.2.1",
+    "egg": "^3.17.5",
+    "egg-scripts": "^2.17.0",
+    "egg-sequelize": "^6.0.0",
     "egg-validate": "^2.0.2",
     "jsonwebtoken": "^8.5.1",
-    "mysql2": "^2.1.0",
-    "nodemailer": "^6.4.6",
-    "sequelize-cli": "^5.5.1"
+    "mysql2": "^3.6.3",
+    "nodemailer": "^6.9.7",
+    "sequelize-cli": "^6.6.1"
   },
   "devDependencies": {
     "autod": "^3.0.1",
@@ -40,6 +40,7 @@
     "ci": "npm run lint && npm run cov",
     "autod": "autod",
     "migrate": "npx sequelize db:migrate",
+    "undom": "npx sequelize db:migrate:undo",
     "seed": "npx sequelize db:seed:all",
     "generate": "npx sequelize migration:generate --name"
   },
